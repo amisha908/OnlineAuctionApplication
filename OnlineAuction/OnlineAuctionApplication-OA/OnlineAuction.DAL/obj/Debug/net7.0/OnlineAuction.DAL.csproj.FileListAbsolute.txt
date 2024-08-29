@@ -1,0 +1,14 @@
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\bin\Debug\net7.0\OnlineAuction.DAL.deps.json
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\bin\Debug\net7.0\OnlineAuction.DAL.runtimeconfig.json
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\bin\Debug\net7.0\OnlineAuction.DAL.dll
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\bin\Debug\net7.0\OnlineAuction.DAL.pdb
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\OnlineAuction.DAL.csproj.AssemblyReference.cache
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\OnlineAuction.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\OnlineAuction.DAL.AssemblyInfoInputs.cache
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\OnlineAuction.DAL.AssemblyInfo.cs
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\OnlineAuction.DAL.csproj.CoreCompileInputs.cache
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\OnlineAuction.DAL.dll
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\refint\OnlineAuction.DAL.dll
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\OnlineAuction.DAL.pdb
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\OnlineAuction.DAL.genruntimeconfig.cache
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.DAL\obj\Debug\net7.0\ref\OnlineAuction.DAL.dll

@@ -1,0 +1,78 @@
+<div class="container">
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="auctions-tab" data-bs-toggle="tab" href="#auctions" role="tab" aria-controls="auctions" aria-selected="true">Auctions</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="products-tab" data-bs-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="false">Products</a>
+    </li>
+  </ul>
+  
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="auctions" role="tabpanel" aria-labelledby="auctions-tab">
+      <!-- Auction content -->
+      <div *ngIf="auctions.length > 0">
+        <h2>Auctions</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Highest Bidder Username</th>
+              <th>Auction Start</th>
+              <th>Auction End</th>
+              <th>Highest Bid Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let auction of auctions">
+              <td>{{ productNames[auction.productId] || 'Loading...' }}</td>
+              <td>{{ highestBidders[auction.auctionId] || 'Loading...' }}</td>
+              <td>{{ auction.auctionStart | date:'short' }}</td>
+              <td>{{ auction.auctionEnd | date:'short' }}</td>
+              <td>{{ auction.highestBidAmount | currency }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div *ngIf="!auctions.length && !errorMessage">
+        <p>No auctions available.</p>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">
+      <!-- Product content -->
+      <div *ngIf="products.length > 0">
+        <h2>Products</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Starting Price</th>
+              <th>Created At</th>
+              <th>Duration (Days)</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of products">
+              <td>{{ product.productName }}</td>
+              <td>{{ product.startingPrice | currency }}</td>
+              <td>{{ product.createdAt | date:'short' }}</td>
+              <td>{{ product.auctionDuration }}</td>
+              <td>
+                <button class="btn btn-danger btn-sm" (click)="deleteProduct(product.productId)">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div *ngIf="!products.length && !errorMessage">
+        <p>No products available.</p>
+      </div>
+    </div>
+  </div>
+</div>

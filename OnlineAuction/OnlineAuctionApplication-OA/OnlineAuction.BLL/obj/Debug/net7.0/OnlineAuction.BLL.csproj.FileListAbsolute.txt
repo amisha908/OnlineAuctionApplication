@@ -1,0 +1,15 @@
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\bin\Debug\net7.0\OnlineAuction.BLL.deps.json
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\bin\Debug\net7.0\OnlineAuction.BLL.dll
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\bin\Debug\net7.0\OnlineAuction.BLL.pdb
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\bin\Debug\net7.0\OnlineAuction.DAL.dll
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\bin\Debug\net7.0\OnlineAuction.DAL.pdb
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\OnlineAuction.BLL.csproj.AssemblyReference.cache
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\OnlineAuction.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\OnlineAuction.BLL.AssemblyInfoInputs.cache
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\OnlineAuction.BLL.AssemblyInfo.cs
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\OnlineAuction.BLL.csproj.CoreCompileInputs.cache
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\OnlineAuction.BLL.csproj.CopyComplete
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\OnlineAuction.BLL.dll
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\refint\OnlineAuction.BLL.dll
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\OnlineAuction.BLL.pdb
+C:\Users\amisha01\OneDrive - Nagarro\Desktop\OnlineAuctionApplication\OnlineAuctionApplication\OnlineAuction.BLL\obj\Debug\net7.0\ref\OnlineAuction.BLL.dll

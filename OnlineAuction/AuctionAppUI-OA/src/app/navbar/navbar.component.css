@@ -1,0 +1,65 @@
+.navbar {
+  background-color: #343a40 !important; /* Dark background for a professional look */
+  border-bottom: 1px solid #212529 !important; /* Slightly darker border for contrast */
+  padding: 0 !important; /* Increased padding for a larger navbar */
+  text-align: center !important;
+  height: 60px !important;
+  width: 100% !important;
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+span{
+  text-align: center;
+  top: auto;
+  height: auto;
+}
+nav{
+  font-size: 20px;
+}
+html {
+  font-size: 20px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.navbar-brand {
+  font-size: 20px !important;
+ 
+  font-weight: bold !important;
+  color: #ffffff !important;
+  text-align: left !important;
+  text-justify: auto !important;
+  
+}
+
+.navbar-text {
+  color: #ffffff !important;
+}
+
+.btn-danger {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  color: #ffffff !important;
+ 
+  border-radius: 4px !important; /* Rounded corners */
+  padding: 8px 15px !important; /* Added padding for better button size */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth color transition */ /* Smooth color transition */
+}
+
+.btn-danger:hover {
+  background-color: #c82333 !important;
+  border-color: #bd2130 !important;
+}
+
+.container {
+  display: flex !important;
+  justify-content: space-between !important; /* Space between brand and right side elements */
+  align-items: center !important;
+}
+
+.ml-auto {
+  margin-left: auto !important; /* Pushes the right-side content to the far right */
+}
+
+.navbar-expand-lg {
+  flex-direction: row !important; /* Ensures items are in a row */
+}

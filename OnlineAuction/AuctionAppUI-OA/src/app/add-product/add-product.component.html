@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container">
+  <div class="form-box">
+    <h2>Add Product</h2>
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        <input [(ngModel)]="productForm.productName" name="productName" id="productName" type="text" class="form-control" required #name="ngModel"/>
+        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="form-error">
+          Product Name is required.
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea [(ngModel)]="productForm.description" id="description" name="description" class="form-control" required #description="ngModel"></textarea>
+        <div *ngIf="description.invalid && (description.dirty || description.touched)" class="form-error">
+          Description is required.
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="startingPrice">Starting Price</label>
+        <input [(ngModel)]="productForm.startingPrice" id="startingPrice" name="startingPrice" type="number" class="form-control" min="0" required #startingPrice="ngModel"/>
+        <div *ngIf="startingPrice.invalid && (startingPrice.dirty || startingPrice.touched)" class="form-error">
+          Starting Price must be a non-negative number.
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="reservedPrice">Reserved Price</label>
+        <input [(ngModel)]="productForm.reservedPrice" id="reservedPrice" name="reservedPrice" type="number" class="form-control" min="0" required #reservedPrice="ngModel"/>
+        <div *ngIf="reservedPrice.invalid && (reservedPrice.dirty || reservedPrice.touched)" class="form-error">
+          Reserved Price must be a non-negative number.
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="auctionDuration">Auction Duration (hours)</label>
+        <input [(ngModel)]="productForm.auctionDuration" id="auctionDuration" name="auctionDuration" type="number" class="form-control" min="0" required #auctionDuration="ngModel"/>
+        <div *ngIf="auctionDuration.invalid && (auctionDuration.dirty || auctionDuration.touched)" class="form-error">
+          Auction Duration must be a non-negative number.
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="category">Category</label>
+        <input [(ngModel)]="productForm.category" id="category" name="category" type="text" class="form-control" required #category="ngModel"/>
+        <div *ngIf="category.invalid && (category.dirty || category.touched)" class="form-error">
+          Category is required.
+        </div>
+      </div>
+      
+      <button (click)="backtoHome()" type="button" class="btn btn-primary">Back</button>
+      <button type="submit" class="btn btn-success" [disabled]="form.invalid">Add Product</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
+

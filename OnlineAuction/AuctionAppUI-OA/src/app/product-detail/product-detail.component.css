@@ -1,0 +1,170 @@
+ .container {
+      position: relative;
+      padding-top: 60px; /* Make room for the back button */
+    }
+    
+html {
+  /* font-size: 10px; */
+  font-size: 20px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+    body {
+      background-color: #f8f9fa;
+      font-size: 20px;
+    }
+    .btn-back {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .product-detail-container h1,
+    .auction-results-container h3,
+    .bids-container h2 {
+      text-align: center;
+      margin: 20px 0;
+      padding: 10px;
+      color: #fff;
+    }
+
+    .product-detail-container h1 {
+      background-color: #007bff; /* Blue background */
+    }
+
+    .auction-results-container h3 {
+      background-color: #28a745; /* Green background */
+    }
+
+    .bids-container h2 {
+      background-color: #ffc107; /* Yellow background */
+    }
+
+    .card {
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    .card-header {
+      /* font-size: 1.5em; */
+      font-weight: bold;
+    }
+
+    .table-striped > tbody > tr:nth-of-type(odd) {
+      background-color: #f9f9f9;
+    }
+
+    .form-group {
+      margin-top: 20px;
+    }
+
+    .form-control {
+      border-radius: 4px;
+    }
+
+    .btn-success {
+      margin-top: 20px;
+    }
+
+    .text-danger {
+      font-size: 0.9em;
+    }
+
+    .list-group-item {
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    .list-group-item p {
+      margin: 0;
+    }
+
+    .no-product {
+      text-align: center;
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    .container {
+      position: relative;
+      padding-top: 60px; /* Make room for the back button */
+    }
+
+    .btn-back {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .product-detail-container h1,
+    .auction-results-container h3,
+    .bids-container h2 {
+      text-align: center;
+      margin: 20px 0;
+      padding: 10px;
+      color: #fff;
+    }
+
+    .product-detail-container h1 {
+      background-color: #007bff; /* Blue background */
+    }
+
+    .auction-results-container h3 {
+      background-color: #28a745; /* Green background */
+    }
+
+    .bids-container h2 {
+      background-color: #ffc107; /* Yellow background */
+    }
+
+    .card {
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    .card-header {
+      /* font-size: 1.5em; */
+      font-weight: bold;
+    }
+
+    .table-striped > tbody > tr:nth-of-type(odd) {
+      background-color: #f9f9f9;
+    }
+
+    .form-group {
+      margin-top: 20px;
+    }
+
+    .form-control {
+      border-radius: 4px;
+    }
+
+    .btn-success {
+      margin-top: 20px;
+    }
+
+    .text-danger {
+      font-size: 0.9em;
+    }
+
+    .list-group-item {
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    .list-group-item p {
+      margin: 0;
+    }
+
+    .no-product {
+      text-align: center;
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    .back-button-container {
+     
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+    }
+ 

@@ -1,0 +1,14 @@
+/* global styles or specific to page components */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set your desired font family */
+  line-height: 1.5; /* Adjust line height for readability */
+  color: #333; /* Set a default text color */
+  }
+  
+  .content {
+    margin-top: 60px; /* Adjust this value to match the navbar height */
+    
+  }
+  

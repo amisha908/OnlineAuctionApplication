@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container product-detail-container">
+  <div class="back-button-container">
+    <button (click)="backtoHome()" class="btn btn-danger btn-back">Back</button>
+  </div>
+  <h1>Product Detail</h1>
+
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td><strong>Product Name:</strong></td>
+            <td>{{ product!.productName || 'Unnamed Product' }}</td>
+          </tr>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>{{ product!.description || 'No description' }}</td>
+          </tr>
+          <tr>
+            <td><strong>Starting Price:</strong></td>
+            <td>{{ product!.startingPrice | currency }}</td>
+          </tr>
+          <tr>
+            <td><strong>Reserved Price:</strong></td>
+            <td>{{ product!.reservedPrice | currency }}</td>
+          </tr>
+          <tr>
+            <td><strong>Auction Duration:</strong></td>
+            <td>{{ product!.auctionDuration }} hours</td>
+          </tr>
+          <tr>
+            <td><strong>Category:</strong></td>
+            <td>{{ product!.category || 'No category' }}</td>
+          </tr>
+          <tr>
+            <td><strong>Seller:</strong></td>
+            <td>{{ sellerUsername || 'Unknown Seller' }}</td>
+          </tr>
+          <tr>
+            <td><strong>Created At:</strong></td>
+            <td>{{ product!.createdAt | date:'short' }}</td>
+          </tr>
+          <tr>
+            <td><strong>Time Remaining:</strong></td>
+            <td>{{ remainingTime }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bid Section -->
+  <div *ngIf="showBidSection" class="bids-container">
+    <h2>Bids</h2>
+    <div class="card">
+      <div class="card-body">
+        <ul class="list-group">
+          <li *ngFor="let bid of bids" class="list-group-item">
+            <p><strong>Bid Amount:</strong> {{ bid.bid.bidAmount | currency }}</p>
+            <p><strong>Bidder:</strong> {{ bid.username }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <form #form="ngForm" (ngSubmit)="placeBid()" class="mt-4">
+      <div class="form-group">
+        <label for="bidAmount">Bid Amount:</label>
+        <input
+          id="bidAmount"
+          [(ngModel)]="bidForm.bidAmount"
+          name="bidAmount"
+          type="number"
+          #name="ngModel"
+          class="form-control"
+          min="product?.startingPrice"
+          [attr.step]="1"
+        />
+        <div *ngIf="name.touched">
+          <div *ngIf="bidForm.bidAmount < (product?.startingPrice || 0)" class="text-danger">
+            Bid amount must be greater than the starting price.
+          </div>
+          <div *ngIf="!bidForm.bidAmount" class="text-danger">
+            Bid amount is required.
+          </div>
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="btn btn-success"
+        [disabled]="bidForm.bidAmount <= (bids.length > 0 ? bids[0].bid.bidAmount : (product!.startingPrice || 0))"
+      >
+        Place Bid
+      </button>
+    </form>
+  </div>
+
+  <!-- Auction Results Section -->
+  <div *ngIf="showAuctionResults" class="auction-results-container">
+    <h3>Auction Results</h3>
+    <div class="card">
+      <div class="card-body">
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td><strong>Highest Bid Amount:</strong></td>
+              <td>{{ auctionResult.highestBidAmount | currency }}</td>
+            </tr>
+            <tr>
+              <td><strong>Highest Bidder Username:</strong></td>
+              <td>{{ auctionResult.highestBidderUsername }}</td>
+            </tr>
+           
+
+
+            <tr *ngIf="!highestBidBelowReserve">
+              <td colspan="2" class="text-danger">
+                Product not sold. The highest bid did not meet the reserve price.
+              </td>
+            </tr>
+            <tr *ngIf="highestBidBelowReserve">
+              <td colspan="2" class="text-success">
+                Product sold successfully!
+              </td>
+            </tr>
+         
+            <!-- <button (click)="createAuction()" class="btn btn-primary mt-4">Create Auction</button> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <ng-template #noProduct>
+    <p class="no-product">No product details available.</p>
+  </ng-template>
+</div>
+
+</body>
+</html>
+

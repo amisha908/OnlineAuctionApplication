@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      
+      <img src='https://st2.depositphotos.com/1561359/12316/v/950/depositphotos_123163894-stock-illustration-online-auction-hanging-sign.jpg' class="card-img-top" alt="Logo" >
+      <h2 class="card-title mb-4">Login</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" formControlName="email" type="email" class="form-control" placeholder="Enter your email" />
+          <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="error mt-2">
+            Email is required and must be a valid email address.
+          </div>
+        </div>
+    
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input id="password" formControlName="password" type="password" class="form-control" placeholder="Enter your password" />
+          <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="error mt-2">
+            Password is required.
+          </div>
+        </div>
+    
+        <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary w-100">Login</button>
+      </form>
+      <div *ngIf="errorMessage" class="error mt-3">
+        {{ errorMessage }}
+      </div>
+      <!-- <p class="text-muted mt-3">Don't have an account? <a href="#">Sign up</a></p> -->
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS and Popper.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+

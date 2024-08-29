@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OnlineAuction.DAL": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
